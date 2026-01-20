@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+h4, h5 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* LOGIN PAGE */
+.log{
+   height: 700px;
+    border-top: 5px solid rgb(255, 134, 48);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px gray;
+}
+#loginPage .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+#loginPage input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#loginPage button {
+    background-color: #5c2d91;
+    border: none;
+    font-weight: 600;
+}
+
+#loginPage button:hover {
+    background-color: #7b44b2;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 2px solid #ddd;
+}
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar .btn {
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* TEMPLATE CARDS */
+#templateList .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+#templateList .card:hover {
+    transform: translateY(-5px);
+}
+#templateList h5 {
+    color: #5c2d91;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#templateList p {
+    color: #555;
+    font-size: 14px;
+}
+.cre{
+    height: 600px;
+}
+.sidbar{
+    height: 700px;
+}
+.tembut a{
+    color: white;
+    
+}
+.tembut a:hover{
+    background-color: white;
+    color: orangered;
+    border-radius: 5px;
+
+}
+/* Edit / Delete buttons */
+#templateList .btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+    font-weight: 600;
+}
+#templateList .btn-warning:hover {
+    background-color: #ec9b3b;
+}
+#templateList .btn-danger {
+    background-color: #d9534f;
+    border: none;
+    font-weight: 600;
+}
+#templateList .btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* CREATE / EDIT PAGE STYLING */
+#createPage, #editPage {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+#createPage input, #createPage textarea,
+#editPage input, #editPage textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+#createPage button.btn-success, #editPage button.btn-success {
+    background-color: #5c2d91;
+    border: none;
+}
+#createPage button.btn-success:hover, #editPage button.btn-success:hover {
+    background-color: #7b44b2;
+}
+#createPage button.btn-secondary, #editPage button.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+}
+#createPage button.btn-secondary:hover, #editPage button.btn-secondary:hover {
+    background-color: #aaa;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (min-width: 1400px) {
+    #templateList .card { font-size: 16px; }
+    #createPage, #editPage { padding: 40px; }
+}
+
+@media (max-width: 1024px) {
+    #templateList .card { font-size: 14px; }
+    #createPage, #editPage { padding: 30px; }
+}
+
+@media (max-width: 390px) {
+    #templateList .card { font-size: 12px; }
+    #templateList button { width: 100%; margin-top: 8px; }
+    #createPage, #editPage { padding: 20px; }
+    #createPage button, #editPage button { width: 100%; margin-top: 8px; }
+    #loginPage .card { width: 90%; padding: 20px; }
+}
